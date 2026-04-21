@@ -2,7 +2,16 @@ function add(a, b) {
   return a + b;
 }
 
+function sub(a, b) {
+  if (!(a > b)) {
+    throw new Error("a must be greater than b");
+  }
+  return a - b;
+}
+
 add(2, 3);
 add(5, 7);
 add(10, 15);
 add(20, 25);
+
+sub(40, 35);
